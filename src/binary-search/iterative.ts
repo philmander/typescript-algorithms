@@ -1,5 +1,5 @@
 'use strict';
-import Benchmark = require('benchmark');
+const Benchmark = require('benchmark');
 import { runBenchmark } from '../helpers';
 import { generateArray } from './random';
 

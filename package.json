@@ -1,15 +1,25 @@
 {
-  "name": "typescript-algorithms",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "benchmark": "^2.1.2",
-    "chart": "github:jstrace/chart"
-  }
+	"name": "typescript-algorithms",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"o-1": "npm run build && node dist/big-o/o-1.js",
+		"lint": "eslint src/**/*.ts{,x}",
+		"lint:fix": "eslint **/*.ts{,x} --fix"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"benchmark": "^2.1.2",
+		"chart": "github:jstrace/chart"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.11",
+		"@typescript-eslint/eslint-plugin": "^5.5.0",
+		"eslint": "^8.4.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0"
+	}
 }
