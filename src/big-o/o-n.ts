@@ -1,4 +1,4 @@
-import Benchmark = require('benchmark');
+const Benchmark = require('benchmark');
 import { generateArray, runBenchmark } from '../helpers';
 
 let arrays = [
